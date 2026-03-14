@@ -40,6 +40,4 @@ inde.get('/', (req, res) =>{
     console.log(error);
 }
 
-inde.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+export default inde;
