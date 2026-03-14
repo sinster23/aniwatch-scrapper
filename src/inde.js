@@ -11,6 +11,7 @@ const episode = require('./routes/episode.js');
 const shedule = require('./routes/shedule.js');
 const server = require('./routes/server.js');
 const src = require('./routes/src1.js');
+const filterRouter = require('./routes/filter.js');
 
 const inde = express();
 const port = 3005;
@@ -27,6 +28,7 @@ inde.use('/api', episode);
 inde.use('/api', shedule);
 inde.use('/api', server);
 inde.use('/api', src);
+inde.use('/api', filterRouter);
 
 inde.get('/', (req, res) =>{
     res.send("Api Is ON SERVICE !");
