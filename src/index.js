@@ -41,8 +41,8 @@ inde.get('/', (req, res) =>{
 }
 
 
-// inde.listen(port, () => {
-//     console.log(`Server is running on port ${port}`);
-// });
+inde.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
 
-export default inde
+// export default inde

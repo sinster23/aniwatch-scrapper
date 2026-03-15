@@ -11,7 +11,7 @@ const ACCEPT_ENCODING_HEADER = "gzip, deflate, br";
 episode.use(cors());
 
 episode.get('/episode/:id', async ( req, res)=>{
-    const episodeanime = req.params.id.match(/\d+/);
+    const episodeanime = req.params.id.match(/\d+(?=\D*$)/);
     const episodelink = `https://aniwatchtv.to/ajax/v2/episode/list/${episodeanime}`;
 
     try {
